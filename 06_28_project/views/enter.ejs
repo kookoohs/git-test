@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Enter</title>
+        <link rel="stylesheet" href="/css/styles.css"/>
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <style>
+            body {
+                background-color: #f8f9fa;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .form-container {
+                max-width: 500px;
+                margin: 50px auto;
+                padding: 30px;
+                background-color: #ffffff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+            }
+            .form-label {
+                font-weight: bold;
+                color: #333;
+            }
+            .form-control {
+                border-radius: 5px;
+            }
+            .btn-custom {
+                background-color: #007bff;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            .btn-custom:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <form action="/save" method="post">
+            <div class="form-container">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">자산명</label>
+                        <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="매물명">
+                    </div> 
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput2" class="form-label">자산가치</label>
+                        <input type="text" name="price" class="form-control" id="exampleFormControlInput2" placeholder="매매가">
+                    </div>
+                    <div class="mb-3">
+                        <label for="riskSelect" class="form-label">위험성</label>
+                        <select class="form-control" id="riskSelect" name="risk">
+                          <option value="High">High</option>
+                          <option value="Middle">Middle</option>
+                          <option value="Low">Low</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="returnSelect" class="form-label">수익성</label>
+                        <select class="form-control" id="returnSelect" name="return">
+                          <option value="High">High</option>
+                          <option value="Middle">Middle</option>
+                          <option value="Low">Low</option>
+                        </select>
+                    </div>
+                      
+                    
+                    
+                    <button type="submit" class="btn btn-custom">저장</button>
+                </form>
+            </div>
+        </form>
+    </body>
+</html>
